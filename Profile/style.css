@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-size: 40px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.skill-main-content {
+    height: 51rem;
+    width: 30%;
+    border: 1px solid black;
+    background-color: #ccc;
+    /* padding: 20px; */
+}
+
+.content-skill {
+    h3 {
+        background-color: #707070;
+        padding: 10px 70px;
+        font-size: 30px;
+    }
+
+    p {
+        margin: 20px 90px;
+    }
+}
+
+.contact-main .contact {
+    margin: 20px;
+}
+
+.contact-main .contact .contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-main .contact img {
+    width: 40px;
+    height: 40px;
+    left: 60px;
+    position: relative;
+}
+
+.contact-main .contact span {
+    margin: 0 80px;
+}
+
+.contact-main .contact a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* --------------------- Work experience -------------------------------- */
+.main-work  {
+    position: relative;
+    left: 600px;
+    /* height: 100%; */
+    width: 90rem;
+    top: -750px;
+    /* border: 1px solid #000; */
+}
+
+.main-work .internship {
+    margin: 20px 80px;
+}
+
+.main-work h3 {
+    font-size: 40px;
+}
+
+.font-p-internship {
+    font-weight: bold;
+}
+
+.internship p {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.work {
+    margin: 20px 80px;
+}
+
+.work p {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.font-work-p {
+    font-weight: bold;
+}
+
+/* .main-skill1 {
+    position: relative;
+    left: 400px;
+    top: -200px;
+    z-index: 1;
+    width: 76%;
+    padding: 23px;
+
+    h3 {
+        font-size: 20px;
+        margin: 20px 80px ;
+    }
+
+    .skill1 {
+        position: relative;
+        z-index: 10;
+        margin: 20px 80px;
+        display: flex;
+
+        p {
+            font-size: 16px;
+            margin: 20px 20px;
+        }
+
+    }
+} */
+
+footer {
+    background-color: #000;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+    }
+}
+/* ------------------ Responsive Design ------------------------ */
+
+/* สำหรับหน้าจอขนาดเล็ก (มือถือ, แท็บเล็ต) */
+@media (max-width: 768px) {
+    .div-main-content {
+        width: 100%; /* ใช้พื้นที่ทั้งหมดในหน้าจอ */
+    }
+
+    header {
+        font-size: 30px; /* ลดขนาดฟอนต์ */
+    }
+
+    .div-skill h3 {
+        font-size: 24px; /* ลดขนาดฟอนต์ */
+    }
+
+    .contact-main .contact-item {
+        flex-direction: column; /* เรียงรายการในแนวตั้ง */
+        align-items: flex-start;
+    }
+
+    .contact-main .contact span {
+        margin: 5px 0;
+    }
+
+    .main-work .work-content {
+        left: 0;
+        top: 0;
+    }
+
+    .main-work h3 {
+        font-size: 35px; /* ลดขนาดฟอนต์ */
+    }
+
+    .main-work p {
+        font-size: 20px; /* ลดขนาดฟอนต์ */
+    }
+}
+
+/* สำหรับหน้าจอขนาดเล็กมาก (มือถือขนาดเล็ก) */
+@media (max-width: 480px) {
+    .div-main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        font-size: 24px; /* ลดขนาดฟอนต์ */
+    }
+
+    .div-skill h3 {
+        font-size: 20px; /* ลดขนาดฟอนต์ */
+    }
+
+    .contact-main .contact-item {
+        flex-direction: column; /* เรียงในแนวตั้ง */
+        align-items: flex-start;
+    }
+
+    .contact-main .contact span {
+        margin: 5px 0;
+    }
+
+    .main-work h3 {
+        font-size: 28px; /* ลดขนาดฟอนต์ */
+    }
+
+    .main-work p {
+        font-size: 18px; /* ลดขนาดฟอนต์ */
+    }
+}
